@@ -42,9 +42,8 @@ def getVersion():
     except: return ""
 
 def printc(rText, rColour=col.OKBLUE, rPadding=0):
-    print("%s ┌──────────────────────────────────────────┐ %s" % (rColour, col.ENDC))
-    for i in range(rPadding): print("%s │                                          │ %s" % (rColour, col.ENDC))
-    print("%s │ %s%s%s │ %s" % (rColour, " "*(20-(len(rText)/2)), rText, " "*(40-(20-(len(rText)/2))-len(rText)), col.ENDC))
+    print("%s ┌──────────────────────────────────────────┐ %s")
+    for i in range(rPadding): print("%s │                                          │ %s")
     for i in range(rPadding): print("%s │                                          │ %s" % (rColour, col.ENDC))
     print("%s └──────────────────────────────────────────┘ %s" % (rColour, col.ENDC))
     print(" ")
@@ -247,7 +246,7 @@ def modifyNginx():
         rFile.close()
 
 if __name__ == "__main__":
-    printc("Xtream UI - Installer Mirror", col.OKGREEN, 2)
+    printc("Xtream UI - Installer Mirror")
     print("%s │ NOTE: this is a forked mirror of original installer from https://xtream-ui.com/install/install.py %s" % (col.OKGREEN, col.ENDC))
     print("%s │ Check out the mirror repo: https://xtream-ui.org %s" % (col.OKGREEN, col.ENDC))
     print("%s │ and https://github.com/xtream-ui-org/xtream-ui-install %s" % (col.OKGREEN, col.ENDC))
