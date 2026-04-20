@@ -4,7 +4,7 @@ This is an installer for XtreamUI, written in Python 3 instead of the already av
 # How to install
 To install XtreamUI, simply run:
 ```
-git clone https://sunnystew/xtreamui_install_python3
+git clone https://github.com/sunnystew/xtreamui_install_python3
 cd xtreamui_install_python3
 python3 install_new.py
 ```
